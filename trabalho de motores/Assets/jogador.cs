@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class andar : MonoBehaviour
+public class jogador : MonoBehaviour
 {
     public int velocidade = 10;
     public Rigidbody rb;
