@@ -11,6 +11,7 @@ public class jogador : MonoBehaviour
     public bool noChao;
 
     // Start is called before the first frame update
+    
     void Start()
     {
 
@@ -24,7 +25,9 @@ public class jogador : MonoBehaviour
                 noChao = true;
             }
         }
+        
     // Update is called once per frame
+    
     void Update()
     {
 
