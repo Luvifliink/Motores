@@ -12,12 +12,21 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        restantes = FindObjectOfType<Moeda>().Length;
-
-        ContadorDeMoedas.text = $"Moedas restantes: {restantes}";
+        restantes = FindObjectsOfType<Moeda>().Length;
+        ContadorDeMoedas.text = $"Moedas restantes: {restantes}";       
     }
 
     // Update is called once per frame
+    
+    public void TirarMoedas(int Valor)
+    {
+        restantes = restantes - Valor;
+        ContadorDeMoedas.text = $"Moedas Restantes: {restantes}";
+        if (restantes <= 0)
+        {
+            parabains.text = "Parabéns";
+        }
+    }
     void Update()
     {
         
