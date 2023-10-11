@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -30,10 +31,16 @@ public class GameManager : MonoBehaviour
             parabains.text = "Parabéns";
             source.Stop();
             source.PlayOneShot(vitoria);
+            Invoke("ProxFase", 5);
         }
     }
     void Update()
     {
         
+    }
+
+    void ProxFase()
+    {
+        SceneManager.LoadScene("Fase2");
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class jogador : MonoBehaviour
 {
-    public int velocidade = 10;
+    public int velocidade = 5;
     public Rigidbody rb;
     private AudioSource source;
     public int forcaPulo = 7;
@@ -49,7 +49,7 @@ public class jogador : MonoBehaviour
 
         rb.AddForce(direcao * velocidade * Time.deltaTime, ForceMode.Impulse);
 
-        if(transform.position.y <= 0) {
+        if(transform.position.y <= 5) {
             SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
 
