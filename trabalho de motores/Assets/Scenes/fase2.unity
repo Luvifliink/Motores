@@ -553,8 +553,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3c9429f4a4d2b5840a3d32bd2ffaf9ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moeda: {fileID: 0}
-  vitoria: {fileID: 0}
+  moeda: {fileID: 8300000, guid: bc1d74c4cb3e2534c88af82a2236a5c8, type: 3}
+  vitoria: {fileID: 8300000, guid: f4a0e8f86a44fc7428ad24c2c4441295, type: 3}
   ContadorDeMoedas: {fileID: 0}
   parabains: {fileID: 0}
   restantes: 0

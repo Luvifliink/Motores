@@ -34,6 +34,8 @@ public class GameManager : MonoBehaviour
             Invoke("ProxFase", 5);
         }
     }
+    
+    //colocar omaga na vitoria da fase 2 e outras coisas engraçadas
     void Update()
     {
         
