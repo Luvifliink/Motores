@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class jogador : MonoBehaviour
 {
     public int velocidade = 10;
     public Rigidbody rb;
+    private AudioSource source;
     public int forcaPulo = 7;
     public bool noChao;
 
@@ -17,7 +19,7 @@ public class jogador : MonoBehaviour
 
         TryGetComponent(out rb);
 
-
+        TryGetComponent(out source);
 
     }
         private void OnCollisionEnter(Collision collision){
@@ -34,9 +36,13 @@ public class jogador : MonoBehaviour
         float H = Input.GetAxis("Horizontal");
         float V = Input.GetAxis("Vertical");
         if(Input.GetKeyDown(KeyCode.Space) && noChao){
+            
+            
 
             rb.AddForce(Vector3.up * forcaPulo, ForceMode.Impulse);
             noChao = false;
+            
+            source.Play();
         }
 
        Vector3 direcao = new Vector3(H,0,V);

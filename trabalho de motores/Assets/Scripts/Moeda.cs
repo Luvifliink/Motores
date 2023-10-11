@@ -18,6 +18,7 @@ public class Moeda : MonoBehaviour
     {
         if (other.tag == "Player")
         {
+            FindObjectOfType<GameManager>().TirarMoedas(1);
             Destroy(gameObject);
         }
     }
