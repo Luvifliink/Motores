@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657892, g: 0.4964128, b: 0.5748173, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657868, g: 0.4964127, b: 0.57481724, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -123,24 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &156539667 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 141373116112556473, guid: 79d1f66db5675d740847f47e33c784b3, type: 3}
-  m_PrefabInstance: {fileID: 2081683043}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &156539673
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 156539667}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0d99ef7ad1a1c7c4389c1383921092b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  velocidadeDeGiro: 50
 --- !u!1 &242776550
 GameObject:
   m_ObjectHideFlags: 0
@@ -1073,7 +1055,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0627bc40f97b5184397e6351e2de6083, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocidade: 5
+  velocidade: 6
   rb: {fileID: 0}
   forcaPulo: 7
   noChao: 0

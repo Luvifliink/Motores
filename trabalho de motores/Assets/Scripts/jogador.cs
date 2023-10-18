@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class jogador : MonoBehaviour
 {
-    public int velocidade = 5;
+    public int velocidade = 6;
     public Rigidbody rb;
     private AudioSource source;
     public int forcaPulo = 7;
@@ -22,11 +22,11 @@ public class jogador : MonoBehaviour
         TryGetComponent(out source);
 
     }
-        private void OnCollisionEnter(Collision collision){
-            if (!noChao && collision.gameObject.tag == "Chão"){
-                noChao = true;
-            }
+    private void OnCollisionEnter(Collision collision){
+        if (!noChao && collision.gameObject.tag == "Chão"){
+            noChao = true;
         }
+    }
         
     // Update is called once per frame
     
@@ -45,7 +45,7 @@ public class jogador : MonoBehaviour
             source.Play();
         }
 
-       Vector3 direcao = new Vector3(H,0,V);
+        Vector3 direcao = new Vector3(H,0,V);
 
         rb.AddForce(direcao * velocidade * Time.deltaTime, ForceMode.Impulse);
 
